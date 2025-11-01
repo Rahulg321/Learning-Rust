@@ -1,10 +1,9 @@
 mod error;
 mod message;
 mod rectangle;
+mod std;
 
-use std::{
-    fs::File,
-    io::{self, Read},
-};
-
-fn main() {}
+fn main() {
+    let b = Box::new(5); // 5 on heap
+    println!("boxed: {}", b);
+}
